@@ -1,3 +1,6 @@
+- Early commits include an initial algorithm design flowchart made using draw.io. However, after receiving feedback from my tutor, I was advised to try out a different LLM which would potentially generate a proper flowchart image representation of the task.
+This means I will not be using the draw.io flowchart that I commited earlier on. The commit just shows a draft and is not the final initial algorithm design.
+
 # SwiftBot Work Repository – CS1704
 Welcome to your repository!
 
