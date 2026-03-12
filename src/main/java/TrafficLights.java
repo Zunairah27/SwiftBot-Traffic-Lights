@@ -30,6 +30,10 @@ public class TrafficLights {
 		System.out.println("- Detect traffic light colours (RED, GREEN, BLUE");
 		System.out.println("- React to each light based on the colour");
 		System.out.println("- Display statistics of the run through");
+		System.out.println("----------------------------------------------------------------------");
+		System.out.println("Press [A] on the SwiftBot to START");
+		System.out.println("Press [X] on the SwiftBot to EXIT");
+		System.out.println("=====================================================================");
 
 	}
 	
