@@ -12,6 +12,8 @@ import java.io.IOException;
 public class TrafficLights {
 	static SwiftBotAPI robot = SwiftBotAPI.INSTANCE;
 	static Scanner scanner = new Scanner (System.in);
+	static int initialSpeed = 0;
+	static int detectionInterval = 0;
 	
 	static void initialiseSystem() {
 		
@@ -54,7 +56,10 @@ public class TrafficLights {
 			System.out.println("Enter your choice (1-3)");
 			String input = scanner.nextLine();
 			
-			
+			if (input == "1") {
+				initialSpeed = 20;
+				detectionInterval = 750;
+			}
 			
 		}
 		
