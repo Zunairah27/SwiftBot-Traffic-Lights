@@ -10,6 +10,8 @@ import java.util.Scanner;
 import java.io.IOException;
 
 public class TrafficLights {
+	static SwiftBotAPI robot = SwiftBotAPI.INSTANCE;
+	static Scanner scanner = new Scanner (System.in);
 	
 	static void initialiseSystem() {
 		
@@ -46,6 +48,15 @@ public class TrafficLights {
 		System.out.println("[3] MODE 3: speed = 40%");
 		System.out.println("---------------------------------------------------------------------");
 		
+		int choice = 0;
+		
+		while (choice < 1 || choice > 3) {
+			System.out.println("Enter your choice (1-3)");
+			String input = scanner.nextLine();
+			
+			
+			
+		}
 		
 	}
 	
