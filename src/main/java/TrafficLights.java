@@ -108,6 +108,7 @@ public class TrafficLights {
 				promptToContinue();
 			}
 		}
+		robot.stopMove();
 		
 	}
 	
