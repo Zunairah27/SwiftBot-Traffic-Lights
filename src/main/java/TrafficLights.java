@@ -10,10 +10,17 @@ import java.util.Scanner;
 import java.io.IOException;
 
 public class TrafficLights {
+	
 	static SwiftBotAPI robot = SwiftBotAPI.INSTANCE;
+	
 	static Scanner scanner = new Scanner (System.in);
+	
 	static int initialSpeed = 0;
 	static int detectionInterval = 0;
+	
+	static boolean isRunning = true;
+	
+	static int lightCount = 0;
 	
 	static void initialiseSystem() {
 		
@@ -81,6 +88,25 @@ public class TrafficLights {
 				speedMode();
 			}
 		System.out.println("You have chosen speed mode " + choice + ". Speed is " +initialSpeed);
+		}
+		
+	}
+	
+	static void loop() {
+		while (isRunning == true) {
+			detectLight();
+			if (isRunning == false) {
+				break;
+			}
+			lightDetected();
+			if (isRunning == false) {
+				break;
+			}
+			lightCount = lightCount + 1;
+			
+			if (lightCount % 3 == 0) {
+				promptToContinue();
+			}
 		}
 		
 	}
