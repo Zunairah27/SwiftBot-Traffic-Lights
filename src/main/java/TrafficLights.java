@@ -61,6 +61,15 @@ public class TrafficLights {
 				detectionInterval = 750;
 			}
 			
+			if (input == "2") {
+				initialSpeed  = 30;
+				detectionInterval = 500;
+			}
+			
+			if (input == "3") {
+				initialSpeed = 40;
+				detectionInterval = 500;
+			}
 		}
 		
 	}
