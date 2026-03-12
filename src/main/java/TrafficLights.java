@@ -11,6 +11,11 @@ import java.io.IOException;
 
 public class TrafficLights {
 	
+	static int[] red = {255, 0, 0};
+	static int[] blue = {0, 0, 255};
+	static int[] green = {0, 255, 0};
+	static int[] yellow = {255, 255, 0};
+	
 	static SwiftBotAPI robot = SwiftBotAPI.INSTANCE;
 	
 	static Scanner scanner = new Scanner (System.in);
