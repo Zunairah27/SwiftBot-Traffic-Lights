@@ -25,6 +25,11 @@ public class TrafficLights {
 		System.out.println("     \\ /  \\/     |______||______|\\_____|\\____/ |_|  |__||______|");
 		System.out.println("=====================================================================");
 		System.out.println("SwiftBot Traffic Light Detection Program");
+		System.out.println("----------------------------------------------------------------------");
+		System.out.println("This program makes the SwiftBot:");
+		System.out.println("- Detect traffic light colours (RED, GREEN, BLUE");
+		System.out.println("- React to each light based on the colour");
+		System.out.println("- Display statistics of the run through");
 
 	}
 	
