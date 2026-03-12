@@ -47,4 +47,21 @@ public class TrafficLights {
 		
 	}
 	
+	static void promptToContinue() {
+		
+	}
+	
+	static void createDisplayLog() {
+		
+	}
+	
+	static void displayLog() {
+		
+	}
+	
+	static void writeLogtoFile() {
+		
+	}
+	
+	
 }
