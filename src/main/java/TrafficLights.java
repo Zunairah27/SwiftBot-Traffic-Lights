@@ -27,17 +27,25 @@ public class TrafficLights {
 		System.out.println("SwiftBot Traffic Light Detection Program");
 		System.out.println("----------------------------------------------------------------------");
 		System.out.println("This program makes the SwiftBot:");
-		System.out.println("- Detect traffic light colours (RED, GREEN, BLUE");
+		System.out.println("- Detect traffic light colours (RED, GREEN, BLUE)");
 		System.out.println("- React to each light based on the colour");
 		System.out.println("- Display statistics of the run through");
 		System.out.println("----------------------------------------------------------------------");
 		System.out.println("Press [A] on the SwiftBot to START");
 		System.out.println("Press [X] on the SwiftBot to EXIT");
 		System.out.println("=====================================================================");
-
 	}
 	
 	static void speedMode() {
+		System.out.println("=====================================================================");
+		System.out.println("SPEED SELECTION");
+		System.out.println("=====================================================================");
+		System.out.println("Please choose one of the modes for the SwiftBot's initial speed:");
+		System.out.println("[1] MODE 1: speed = 20%");
+		System.out.println("[2] MODE 2: speed = 30%");
+		System.out.println("[3] MODE 3: speed = 40%");
+		System.out.println("---------------------------------------------------------------------");
+		
 		
 	}
 	
