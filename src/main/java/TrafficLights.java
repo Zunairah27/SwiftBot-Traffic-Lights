@@ -3,6 +3,11 @@ import swiftbot.SwiftBotAPI;
 import swiftbot.Button;
 import swiftbot.ImageSize;
 
+import java.awt.image.BufferedImage;
+import java.io.FileWriter;
+import java.util.Scanner;
+import java.io.IOException;
+
 public class TrafficLights {
 
 }
