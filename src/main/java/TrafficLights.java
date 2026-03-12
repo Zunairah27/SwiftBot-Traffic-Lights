@@ -22,4 +22,8 @@ public class TrafficLights {
 	static void speedMode() {
 		
 	}
+	
+	static void detectLight() {
+		
+	}
 }
