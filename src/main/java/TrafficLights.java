@@ -18,4 +18,8 @@ public class TrafficLights {
 	static void welcomeScreen() {
 		
 	}
+	
+	static void speedMode() {
+		
+	}
 }
