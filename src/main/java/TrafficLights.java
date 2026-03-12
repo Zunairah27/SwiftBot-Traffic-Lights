@@ -35,5 +35,16 @@ public class TrafficLights {
 		
 	}
 	
+	static void greenLight() {
+		
+	}
+	
+	static void blueLight() {
+		
+	}
+	
+	static void redLight() {
+		
+	}
 	
 }
