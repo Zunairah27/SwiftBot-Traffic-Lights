@@ -124,6 +124,8 @@ public class TrafficLights {
 		System.out.println("SwiftBot is now moving forward at " + initialSpeed + "%");
 		System.out.println("Scanning for traffic lights...");
 		
+		robot.startMove(initialSpeed, initialSpeed);
+		
 	}
 	
 	static void processImage() {
