@@ -26,4 +26,8 @@ public class TrafficLights {
 	static void detectLight() {
 		
 	}
+	
+	static void processImage() {
+		
+	}
 }
