@@ -30,4 +30,10 @@ public class TrafficLights {
 	static void processImage() {
 		
 	}
+	
+	static void lightDetected() {
+		
+	}
+	
+	
 }
