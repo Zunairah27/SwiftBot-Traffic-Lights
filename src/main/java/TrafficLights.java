@@ -57,19 +57,30 @@ public class TrafficLights {
 			String input = scanner.nextLine();
 			
 			if (input == "1") {
+				choice = 1;
 				initialSpeed = 20;
 				detectionInterval = 750;
 			}
 			
-			if (input == "2") {
+			else if (input == "2") {
+				choice = 2;
 				initialSpeed  = 30;
 				detectionInterval = 500;
 			}
 			
-			if (input == "3") {
+			else if (input == "3") {
+				choice = 3;
 				initialSpeed = 40;
 				detectionInterval = 500;
 			}
+			
+			else {
+				System.out.println("==============================================================");
+				System.out.println("ERROR: Invalid speed mode entered, please try again.");
+				System.out.println("==============================================================");
+				speedMode();
+			}
+		System.out.println("You have chosen speed mode " + choice + ". Speed is " +initialSpeed);
 		}
 		
 	}
