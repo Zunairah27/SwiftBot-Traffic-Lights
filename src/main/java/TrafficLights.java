@@ -109,10 +109,13 @@ public class TrafficLights {
 			}
 		}
 		robot.stopMove();
-		
 	}
 	
 	static void detectLight() {
+		System.out.println("==============================================================");
+		System.out.println("Setting underlights to YELLOW");
+		System.out.println("==============================================================");
+		robot.fillUnderlights(yellow);
 		
 	}
 	
