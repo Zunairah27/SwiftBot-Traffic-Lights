@@ -16,7 +16,16 @@ public class TrafficLights {
 	}
 	
 	static void welcomeScreen() {
-		
+		System.out.println("=====================================================================");
+		System.out.println(" ____           __  ______  _       _____   ____    __   __  ______ ");
+		System.out.println(" \\ \\         / / |  ____|| |     / ____| / __ \\ |  \\/  ||  ____|");
+		System.out.println("  \\ \\  /\\  / /  | |__   | |     | |     | |  | || \\  / || |__   ");
+		System.out.println("   \\ \\/  \\/ /   |  __|  | |     | |     | |  | || |\\/| ||  __|  ");
+		System.out.println("    \\   /\\  /    | |____ | |____ | |____ | |__| || |  |  || |____ ");
+		System.out.println("     \\ /  \\/     |______||______|\\_____|\\____/ |_|  |__||______|");
+		System.out.println("=====================================================================");
+		System.out.println("SwiftBot Traffic Light Detection Program");
+
 	}
 	
 	static void speedMode() {
