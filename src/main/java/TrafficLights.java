@@ -14,4 +14,8 @@ public class TrafficLights {
 	static void initialiseSystem() {
 		
 	}
+	
+	static void welcomeScreen() {
+		
+	}
 }
