@@ -327,6 +327,12 @@ public class TrafficLights {
 			mostFreq = "none";
 		}
 		
+		System.out.println("------------------------------------------------------------");
+		System.out.println("PROGRAM TERMINATION");
+		System.out.println("------------------------------------------------------------");
+		System.out.println("Press [Y] to view the execution log");
+		System.out.println("Press [X] again if you do not wish to view the execution log");
+		
 	}
 	
 	static void displayLog() {
