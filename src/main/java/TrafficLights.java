@@ -200,6 +200,15 @@ public class TrafficLights {
 		System.out.println("Colour: " + detectedColour.toUpperCase());
 		System.out.println("Distance: " + detectedDistance + " cm");
 		
+		if (detectedColour == "red") {
+			redLight();
+		}
+		else if (detectedColour == "green") {
+			greenLight();
+		}
+		else if (detectedColour == "blue") {
+			blueLight();
+		}
 	}
 	
 	static void greenLight() {
