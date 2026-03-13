@@ -139,14 +139,23 @@ public class TrafficLights {
 			
 			double distance = robot.useUltrasound();
 			
-			
+			if (distance <= 30.0) {
+				
+			}
 			
 		}
 		
 	}
 	
-	static void processImage() {
+	static String processImage(BufferedImage img) {
+		if (img == null) {
+			return null;
+		}
 		
+		int imgHeight = img.getHeight();
+		int imgWidth = img.getWidth();
+		
+		int pixelTotal = imgHeight * imgWidth;
 	}
 	
 	static void lightDetected() {
