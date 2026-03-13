@@ -191,6 +191,10 @@ public class TrafficLights {
 	}
 	
 	static void lightDetected() {
+		System.out.println("==============================================================");
+		System.out.println("TRAFFIC LIGHT DETECTED");
+		System.out.println("==============================================================");
+		
 		
 	}
 	
