@@ -136,6 +136,11 @@ public class TrafficLights {
 			}
 			
 			BufferedImage img = robot.takeStill(ImageSize.SQUARE_480x480);
+			
+			double distance = robot.useUltrasound();
+			
+			
+			
 		}
 		
 	}
