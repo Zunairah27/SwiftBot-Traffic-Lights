@@ -160,6 +160,16 @@ public class TrafficLights {
 		int totalR = 0;
 		int totalB = 0;
 		int totalG = 0;
+		
+		for (int i = 0; i < imgHeight; i++) {
+			for (int j = 0; j < imgWidth; j++) {
+				int pixel = img.getRGB(j, i);
+				int r = (pixel >> 16) & 0xFF;
+				int g = (pixel >> 8) & 0xFF;
+				int b = pixel & 0xFF;
+		
+			}
+		}
 	}
 	
 	static void lightDetected() {
