@@ -25,10 +25,14 @@ public class TrafficLights {
 	
 	static boolean isRunning = true;
 	
-	static int lightCount = 0;
-	
 	static String detectedColour = "";
 	static double detectedDistance = 0.0;
+	
+	static int redCount = 0;
+	static int greenCount = 0;
+	static int blueCount = 0;
+	
+	static int lightCount = 0;
 	
 	static void initialiseSystem() {
 		
@@ -211,15 +215,20 @@ public class TrafficLights {
 		}
 	}
 	
+	static void redLight() {
+		System.out.println("SwiftBot stopping...");
+		robot.fillUnderlights(red);
+		robot.stopMove();
+		redCount = redCount + 1;
+		
+		
+	}
+	
 	static void greenLight() {
 		
 	}
 	
 	static void blueLight() {
-		
-	}
-	
-	static void redLight() {
 		
 	}
 	
