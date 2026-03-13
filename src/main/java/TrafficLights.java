@@ -173,6 +173,9 @@ public class TrafficLights {
 				totalB = totalB + b;
 			}
 		}
+		double avgR = totalR/pixelTotal;
+		double avgG = totalG/pixelTotal;
+		double avgB = totalB/pixelTotal;
 	}
 	
 	static void lightDetected() {
