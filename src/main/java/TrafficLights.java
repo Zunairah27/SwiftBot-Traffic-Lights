@@ -311,6 +311,17 @@ public class TrafficLights {
 			maxCount = blueCount;
 		}
 		
+		String mostFreq = "";
+		if (redCount == maxCount) {
+			mostFreq = "RED";
+		}
+		if (greenCount == maxCount) {
+			mostFreq = mostFreq + " GREEN";
+		}
+		if (blueCount == maxCount) {
+			mostFreq = mostFreq + " BLUE";
+		}
+		
 		
 	}
 	
