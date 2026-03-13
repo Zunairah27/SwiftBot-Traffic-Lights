@@ -76,6 +76,10 @@ public class TrafficLights {
 		System.out.println("=====================================================================");
 	}
 	
+	static void waitButtonA() {
+		
+	}
+	
 	static void speedMode() {
 		System.out.println("=====================================================================");
 		System.out.println("SPEED SELECTION");
