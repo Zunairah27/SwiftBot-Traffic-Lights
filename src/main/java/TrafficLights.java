@@ -221,6 +221,12 @@ public class TrafficLights {
 		robot.stopMove();
 		redCount = redCount + 1;
 		
+		try {
+			Thread.sleep(1000);
+			System.out.println("Moving forward again...");
+		} catch (InterruptedException e) {
+			System.out.println("Red light error: " + e.getMessage());
+		}
 		
 	}
 	
