@@ -281,6 +281,12 @@ public class TrafficLights {
 	}
 	
 	static void promptToContinue() {
+		robot.stopMove();
+		System.out.println("========================================================");
+		System.out.println("Up till now, " + lightCount + " lights has been detected");
+		System.out.println("--------------------------------------------------------");
+		System.out.println("Press [A] to CONTINUE");
+		System.out.println("Press [X] to TERMINATE the program");
 		
 	}
 	
