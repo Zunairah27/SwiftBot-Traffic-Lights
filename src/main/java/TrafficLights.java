@@ -167,7 +167,10 @@ public class TrafficLights {
 				int r = (pixel >> 16) & 0xFF;
 				int g = (pixel >> 8) & 0xFF;
 				int b = pixel & 0xFF;
-		
+				
+				totalR = totalR + r;
+				totalG = totalG + g;
+				totalB = totalB + b;
 			}
 		}
 	}
