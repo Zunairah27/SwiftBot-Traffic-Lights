@@ -126,6 +126,16 @@ public class TrafficLights {
 		
 		robot.startMove(initialSpeed, initialSpeed);
 		
+		boolean islightFound = false;
+		
+		while (isRunning == true && islightFound == false) {
+			try {
+				Thread.sleep(detectionInterval);
+			} catch (InterruptedException e) {
+				System.out.println("Error during scanning: " + e.getMessage());
+			}
+		}
+		
 	}
 	
 	static void processImage() {
