@@ -322,6 +322,10 @@ public class TrafficLights {
 			mostFreq = mostFreq + " BLUE";
 		}
 		
+		if (lightsTotal == 0) {
+			maxCount = 0;
+			mostFreq = "none";
+		}
 		
 	}
 	
