@@ -227,11 +227,23 @@ public class TrafficLights {
 		} catch (InterruptedException e) {
 			System.out.println("Red light error: " + e.getMessage());
 		}
-		
 	}
 	
 	static void greenLight() {
+		System.out.println("Passing through green light...");
+		robot.fillUnderlights(green);
+		greenCount = greenCount + 1;
 		
+		try {
+			robot.move(initialSpeed, initialSpeed, 2000);
+			System.out.println("Stopping.");
+			Thread.sleep(1000);
+			robot.fillUnderlights(yellow);
+			System.out.println("Underlights set to yellow. Moving forward again...");
+		}
+		catch (InterruptedException e) {
+			System.out.println("Green light error: " + e.getMessage());
+		}
 	}
 	
 	static void blueLight() {
