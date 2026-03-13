@@ -35,6 +35,8 @@ public class TrafficLights {
 	
 	static int lightCount = 0;
 	
+	static long startTime = 0;
+	
 	static void initialiseSystem() {
 		
 	}
@@ -291,6 +293,24 @@ public class TrafficLights {
 	}
 	
 	static void createDisplayLog() {
+		robot.stopMove();
+		robot.disableUnderlights();
+		
+		long endTime = System.currentTimeMillis();
+		long durationMilliseconds = endTime - startTime;
+		long durationSeconds = durationMilliseconds / 1000;
+		String duration = durationSeconds + "seconds";
+		
+		int lightsTotal = redCount + greenCount + blueCount;
+		
+		int maxCount = redCount;
+		if (greenCount > maxCount) {
+			maxCount = greenCount;
+		}
+		if (blueCount > maxCount) {
+			maxCount = blueCount;
+		}
+		
 		
 	}
 	
