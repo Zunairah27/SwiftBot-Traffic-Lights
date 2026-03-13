@@ -176,6 +176,16 @@ public class TrafficLights {
 		double avgR = totalR/pixelTotal;
 		double avgG = totalG/pixelTotal;
 		double avgB = totalB/pixelTotal;
+		
+		if (avgR > avgG && avgR > avgB) {
+			return "red";
+		}
+		else if (avgG > avgB && avgG > avgR) {
+			return "green";
+		}
+		else if (avgB > avgG && avgB > avgR) {
+			return "blue";
+		}
 	}
 	
 	static void lightDetected() {
