@@ -38,7 +38,14 @@ public class TrafficLights {
 	static long startTime = 0;
 	
 	static void initialiseSystem() {
-		
+		welcomeScreen();
+		speedMode();
+		startTime = System.currentTimeMillis();
+		robot.enableButton(Button.X, () -> {
+			isRunning = false;
+			robot.stopMove();
+			System.out.println("Button X is pressed. Stopping program...");
+		});
 	}
 	
 	static void welcomeScreen() {
