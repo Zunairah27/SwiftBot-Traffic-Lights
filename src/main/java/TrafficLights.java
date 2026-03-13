@@ -335,8 +335,15 @@ public class TrafficLights {
 		
 	}
 	
-	static void displayLog() {
-		
+	static void displayLog(int lightsTotal, String mostFreq, int maxCount, String duration) {
+		System.out.println("==============================================================");
+		System.out.println("EXECUTION LOG");
+		System.out.println("============================================================== ");
+		System.out.println("Total traffic lights detected:                     " + lightsTotal);
+		System.out.println("Most frequent colour:                              " + mostFreq);
+		System.out.println("How many tmes most frequent colour was detected:   " + maxCount );
+		System.out.println("Total duration:                                    " + duration);
+			
 	}
 	
 	static void writeLogtoFile() {
