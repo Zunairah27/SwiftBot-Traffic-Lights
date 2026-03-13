@@ -134,6 +134,8 @@ public class TrafficLights {
 			} catch (InterruptedException e) {
 				System.out.println("Error during scanning: " + e.getMessage());
 			}
+			
+			BufferedImage img = robot.takeStill(ImageSize.SQUARE_480x480);
 		}
 		
 	}
