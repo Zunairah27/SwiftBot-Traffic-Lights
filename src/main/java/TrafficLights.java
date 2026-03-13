@@ -156,6 +156,10 @@ public class TrafficLights {
 		int imgWidth = img.getWidth();
 		
 		int pixelTotal = imgHeight * imgWidth;
+		
+		int totalR = 0;
+		int totalB = 0;
+		int totalG = 0;
 	}
 	
 	static void lightDetected() {
