@@ -37,6 +37,13 @@ public class TrafficLights {
 	
 	static long startTime = 0;
 	
+	public static void main(String[] args) {
+		initialiseSystem();
+		loop();
+		createDisplayLog();
+	}
+	
+	
 	static void initialiseSystem() {
 		welcomeScreen();
 		speedMode();
