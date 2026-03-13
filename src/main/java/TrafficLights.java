@@ -15,6 +15,7 @@ public class TrafficLights {
 	static int[] blue = {0, 0, 255};
 	static int[] green = {0, 255, 0};
 	static int[] yellow = {255, 255, 0};
+	static int[] off = {0, 0, 0};
 	
 	static SwiftBotAPI robot = SwiftBotAPI.INSTANCE;
 	
@@ -247,7 +248,36 @@ public class TrafficLights {
 	}
 	
 	static void blueLight() {
+		System.out.println("Yielding path...");
+		robot.stopMove();
+		blueCount = blueCount + 1;
 		
+		try {
+			Thread.sleep(1000);
+			for (int i = 0; i < 3; i++) {
+				robot.fillUnderlights(blue);
+				Thread.sleep(500);
+				robot.fillUnderlights(off);
+				Thread.sleep(400);
+			}
+			
+			robot.move(-initialSpeed, initialSpeed, 500);
+			Thread.sleep(100);
+			
+			robot.move(initialSpeed, initialSpeed, 1000);
+			Thread.sleep(1000);
+			
+			robot.move(initialSpeed, -initialSpeed, 500);
+			Thread.sleep(100);
+			
+			robot.move(-initialSpeed, -initialSpeed, 1000);
+			
+			System.out.println("Continuing movements...");
+			robot.fillUnderlights(yellow);
+		}
+		catch (InterruptedException e) {
+			System.out.println("Blue light error: " + e.getMessage());
+		}
 	}
 	
 	static void promptToContinue() {
