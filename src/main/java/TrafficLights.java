@@ -186,6 +186,8 @@ public class TrafficLights {
 		else if (avgB > avgG && avgB > avgR) {
 			return "blue";
 		}
+		
+		return null;
 	}
 	
 	static void lightDetected() {
