@@ -27,6 +27,9 @@ public class TrafficLights {
 	
 	static int lightCount = 0;
 	
+	static String detectedColour = "";
+	static double detectedDistance = 0.0;
+	
 	static void initialiseSystem() {
 		
 	}
@@ -194,7 +197,8 @@ public class TrafficLights {
 		System.out.println("==============================================================");
 		System.out.println("TRAFFIC LIGHT DETECTED");
 		System.out.println("==============================================================");
-		
+		System.out.println("Colour: " + detectedColour.toUpperCase());
+		System.out.println("Distance: " + detectedDistance + " cm");
 		
 	}
 	
